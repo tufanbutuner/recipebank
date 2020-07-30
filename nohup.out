@@ -1,0 +1,97 @@
+Example app listening on port 8000!
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at Server.listen (net.js:1434:7)
+    at Function.listen (/home/tbutu001/lab3/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/tbutu001/lab3/index.js:28:5)
+    at Module._compile (internal/modules/cjs/loader.js:945:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:962:10)
+    at Module.load (internal/modules/cjs/loader.js:798:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:711:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1014:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1325:8)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at Server.listen (net.js:1434:7)
+    at Function.listen (/home/tbutu001/lab3/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/tbutu001/lab3/index.js:28:5)
+    at Module._compile (internal/modules/cjs/loader.js:945:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:962:10)
+    at Module.load (internal/modules/cjs/loader.js:798:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:711:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1014:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1325:8)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+Example app listening on port 8000!
+Connected to database
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/tbutu001/lab3/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/tbutu001/lab3/node_modules/mysql/lib/Connection.js:97:28)
+    at Socket.<anonymous> (/home/tbutu001/lab3/node_modules/mysql/lib/Connection.js:525:10)
+    at Socket.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1183:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/tbutu001/lab3/node_modules/mysql/lib/Connection.js:426:8)
+    at Protocol.emit (events.js:210:5)
+    at Protocol._delegateError (/home/tbutu001/lab3/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/tbutu001/lab3/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/tbutu001/lab3/node_modules/mysql/lib/Connection.js:97:28)
+    [... lines matching original stack trace ...]
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
+Example app listening on port 8000!
+Connected to database
+events.js:187
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/tbutu001/lab3/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/tbutu001/lab3/node_modules/mysql/lib/Connection.js:97:28)
+    at Socket.<anonymous> (/home/tbutu001/lab3/node_modules/mysql/lib/Connection.js:525:10)
+    at Socket.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1183:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/tbutu001/lab3/node_modules/mysql/lib/Connection.js:426:8)
+    at Protocol.emit (events.js:210:5)
+    at Protocol._delegateError (/home/tbutu001/lab3/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/tbutu001/lab3/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/tbutu001/lab3/node_modules/mysql/lib/Connection.js:97:28)
+    [... lines matching original stack trace ...]
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.navbar
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #505050;
+}
+                                                                                                                                                                                                                                                                                                  
+.navbar a
+{
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+                                                                                                                                                                                                                                                                                                  
+.navbar a.active
+{
+background-color: black;
+color:white;
+}
+
+.dropdown
+{
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn
+{
+font-size: 16px;
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: black;
+font-family: inherit;
+margin: 0;
+}
+                                                                                                                                                                                                                                                                                                  
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+background-color: white;
+color:black;
+}
+                                                                                                                                                                                                                                                                                                  
+.dropdown-content
+{
+display: none;
+position: absolute;
+background-color: #505050;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+                                                                                                                                                                                                                                                                                                  
+.dropdown-content a
+{
+float: none;
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover
+{
+background-color: gray;
+}
+                                                                                                                                                                                                                                                                                                  
+.dropdown:hover .dropdown-content
+{
+display: block;
+}
+                                                                                                                                                                                                                                                                                                  
+body
+{
+background-color: #aecafc;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+                                                                                                                                                                                                                                                                                                  
+h1
+{
+text-align: center;
+color: black;
+}
+                                                                                                                                                                                                                                                                                                  
+p
+{
+text-align: left;
+margin-left: 20px;
+font: 15px, sans-serif;
+color: black;
+}
+                                                                                                                                                                                                                                                                                                  
+img
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+                                                                                                                                                                                                                                                                                                  
+form
+{
+text-align: center;
+color: black;
+}
+                                                                                                                                                                                                                                                                                                  
+</style>
+</head>
+<body>
+<div class="navbar">
+   <a href='/register'>Register</a>
+   <a href='/login'>Login</a>
+   <a href="./">Home</a>
+   <a href="/recipelist">Recipe List</a>
+   <a href="/search">Search Recipes</a>
+   
+   <div class="dropdown">
+   <button class="dropbtn">Recipes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a class="active" href="/addrecipe">Add Recipe</a>
+      <a href="/deleterecipe">Delete Recipe</a>
+      <a href="/edit-recipe">Update Recipe</a>
+    </div>
+    </div>
+    <a href="/api">Api</a>
+      <li style="float:right"><a href='/logout'>Logout</a></li>
+     </div>
+
+            <Title>Add Recipe</Title>
+                                                                                                                                                                          
+        <h1> Add a recipe by filling out the form </h1>                                                                                                                                                                                   
+        <form method="POST" action="/recipeadded">
+        <p><label>Recipe Name: </label></p>
+        <p><input id="name" type="text" name="name" placeholder="Enter the name of the Recipe"></p>
+        <p><label>Ingredients: </label></p>
+        <p><input id="ingredients" type="text" name="ingredients" placeholder="Enter the Ingredients needed" /></p>
+        <p><label>Author's Name: </label></p>
+        <p><input id="author" type="text" name="author" placeholder="Enter your name" /></p>
+        <p><input type="submit" value="Submit" /></p>
+        </form>                                                                                                                                                           
+</body>
+</html>
+
